@@ -1,4 +1,7 @@
 
+// TODO write comment
+// TODO fix class definition: enum and class should be defined in separate files
+// TODO (think about it) this class is never used
 public class Pawn {
 	
 	/**
@@ -7,7 +10,12 @@ public class Pawn {
 	 */
 	public enum Color
 	{
+		// TODO write comment
+		// TODO fix constant (uppercase)
 		Orange,
+		
+		// TODO write comment
+				// TODO fix constant (uppercase)
 		Yellow,
 		
 	}
