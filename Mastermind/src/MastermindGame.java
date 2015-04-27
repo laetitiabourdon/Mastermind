@@ -10,34 +10,75 @@
 
 public class MastermindGame {
 
-	// TODO fix comment. Tell what is the purpose of the field (+ relevant values)
-	// TODO (think about it) this field should not be public
 	/**
-	 * Pions
-	 * There are 8 colors of pawn. The computer generate a combination of 4 colors. 
+	 * maximum number of attempts to guess the code
 	 */
-	public int pawnColor;
+	public final static int NUMBER_OF_ATTEMPTS = 10;
 	
-	// TODO fix comment. Tell what is the purpose of the field
-	// TODO (think about it) this field should not be public
 	/**
-	 * Pions de vérification
+	 * maximum number of pawns to composed the combination
+	 */
+	public final static int MAX_NUMBER_OF_PAWNS_IN_COMBINATION = 4;
+	
+	private Code codeToGuess;
+	
+	
+	
+	// TODO (done) fix comment. Tell what is the purpose of the field (+ relevant values)
+	// TODO (done) (think about it) this field should not be public
+	/**
+	 * Represents pawns. 
+	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
+	 */
+	private int pawns;
+	
+	
+	// TODO (done) fix comment. Tell what is the purpose of the field
+	// TODO (done) (think about it) this field should not be public
+	/**
+	 * This field represents check pawns.
+	 * True = Correct color in correct place / False : Correct color in wrong place 
 	 * They serve to check the combination proposed by the player. They give clues to the player.
 	 */
-	public boolean checkPawn; 
+	private boolean checkPawn; 
 	
-	// TODO fix comment. Tell what is the purpose of the field
-	// TODO (think about it) this field should not be public
+	
+	// TODO (done) fix comment. Tell what is the purpose of the field
+	// TODO (done) (think about it) this field should not be public
 	/**
-	 * It serves to choose the number of rounds you want play before the beginning.
+	 * This field represents the numbers of rounds.
 	 * We can play between 2 and 1O rounds.
+	 * It serves to choose the number of rounds you want play before the beginning.
 	 */
-	public int roundNumber;
+	private int roundNumber;
 	
 	// TODO (think about it) this class has no constructor ...
 	
-	// TODO write comment
+	public MastermindGame() {
+		this.pawn=
+		this.checkPawn=
+		this.roundNumber=
+	}
+	
+	
+	
+	// TODO (done) write comment
+	/**
+	 * The class serves to play mastermind 
+	 */
 	public void play() {
 		
 	}
+	
+	
+	/**
+	 * This class serves to generate pawns.
+	 */
+	public void pawn() {
+		
+	}
+	
+	
+	
+	
 }
