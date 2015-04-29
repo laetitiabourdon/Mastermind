@@ -1,5 +1,8 @@
+import java.util.Random;
 
-public class Code {
+
+public class Code 
+{
 	
 	
 	/**
@@ -9,5 +12,19 @@ public class Code {
 	
 	private Peg[] pegs;
 	
-
+	public Code()
+	{
+		this.pegs= new Peg[3];
+		Random rnd = new Random();
+		for(int i=0;i<4;i++)
+		{
+			Peg[i]=rnd(9) 
+				   {
+					   return rnd(9);
+				   }
+			 
+		}
+	}
 }
+
+

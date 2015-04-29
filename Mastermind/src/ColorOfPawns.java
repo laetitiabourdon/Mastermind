@@ -2,47 +2,47 @@
 public enum ColorOfPawns {
 	
 		// TODO (done) write comment
-		// TODO fix constant (uppercase)
+		// TODO (done) fix constant (uppercase)
 		/**
 		 * This constant represent a color of pawn : Orange
 		 */
-		ORANGE,
+		1,
 		
-		// TODO write comment
-		// TODO fix constant (uppercase)
+		// TODO (done) write comment
+		// TODO (done) fix constant (uppercase)
 		/**
 		 * This constant represent a color of pawn : Yellow
 		 */
-		YELLOW,
+		2,
 		
 		/**
 		 * This constant represent a color of pawn : Green
 		 */
-		GREEN, 
+		3, 
 		
 		/**
 		 * This constant represent a color of pawn : Blue
 		 */
-		BLUE, 
+		4, 
 		
 		/**
 		 * This constant represent a color of pawn : Red
 		 */
-		RED, 
+		5, 
 		
 		/**
 		 * This constant represent a color of pawn : White
 		 */
-		WHITE,
+		6,
 		
 		/**
 		 * This constant represent a color of pawn : Purple
 		 */
-		PURPLE,
+		7,
 		
 		/**
 		 * This constant represent a color of pawn : Pink
 		 */
-		PINK;
+		8;
 	}
 	

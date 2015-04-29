@@ -14,11 +14,7 @@ public class MastermindGame {
 	 * maximum number of attempts to guess the code
 	 */
 	public final static int NUMBER_OF_ATTEMPTS = 10;
-	
-	/**
-	 * maximum number of pawns to composed the combination
-	 */
-	public final static int MAX_NUMBER_OF_PAWNS_IN_COMBINATION = 4;
+
 	
 	private Code codeToGuess;
 	
@@ -55,7 +51,7 @@ public class MastermindGame {
 	// TODO (think about it) this class has no constructor ...
 	
 	public MastermindGame() {
-		this.pawn=
+		this.pawns=
 		this.checkPawn=
 		this.roundNumber=
 	}
