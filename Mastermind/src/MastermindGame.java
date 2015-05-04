@@ -15,13 +15,12 @@ public class MastermindGame {
 	 */
 	public final static int NUMBER_OF_ATTEMPTS = 10;
 
-	
+	// TODO write comment
 	private Code codeToGuess;
 	
 	
 	
-	// TODO (done) fix comment. Tell what is the purpose of the field (+ relevant values)
-	// TODO (done) (think about it) this field should not be public
+	// TODO (think about it) all pawns can not be represented using a single int
 	/**
 	 * Represents pawns. 
 	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
@@ -39,16 +38,13 @@ public class MastermindGame {
 	private boolean checkPawn; 
 	
 	
-	// TODO (done) fix comment. Tell what is the purpose of the field
-	// TODO (done) (think about it) this field should not be public
 	/**
 	 * This field represents the numbers of rounds.
 	 * We can play between 2 and 1O rounds.
 	 * It serves to choose the number of rounds you want play before the beginning.
 	 */
 	private int roundNumber;
-	
-	// TODO (think about it) this class has no constructor ...
+
 	
 	public MastermindGame() {
 		this.pawns=

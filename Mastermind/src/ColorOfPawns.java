@@ -1,15 +1,14 @@
 
+// TODO write comment
+
 public enum ColorOfPawns {
-	
-		// TODO (done) write comment
-		// TODO (done) fix constant (uppercase)
+
+	// TODO constants can not be named using numbers
 		/**
 		 * This constant represent a color of pawn : Orange
 		 */
 		1,
 		
-		// TODO (done) write comment
-		// TODO (done) fix constant (uppercase)
 		/**
 		 * This constant represent a color of pawn : Yellow
 		 */

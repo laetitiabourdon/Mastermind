@@ -1,7 +1,5 @@
 
 // TODO write comment
-// TODO (done) fix class definition: enum and class should be defined in separate files
-// TODO (done) (think about it) this class is never used
 /**
  * 
  * @author bourdonl
