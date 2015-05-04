@@ -1,5 +1,5 @@
 
-// TODO fix comment: tell what this class actually represents
+// TODO (done) fix comment: tell what this class actually represents
 
 /**
  * The objective of the game is to guess the exact positions of the colors in the computer's sequence.
