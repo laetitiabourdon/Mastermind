@@ -1,47 +1,64 @@
 
-// TODO write comment
-
+// TODO (done) write comment
+/**
+ * Enumeration of pawns' colors.
+ * @author bourdonl
+ * 
+ */
 public enum ColorOfPawns {
 
-	// TODO constants can not be named using numbers
+	// TODO (done) constants can not be named using numbers
 		/**
 		 * This constant represent a color of pawn : Orange
 		 */
-		1,
+		ORANGE("O"),
 		
 		/**
 		 * This constant represent a color of pawn : Yellow
 		 */
-		2,
+		YELLOW("Y"),
 		
 		/**
 		 * This constant represent a color of pawn : Green
 		 */
-		3, 
+		GREEN("G"), 
 		
 		/**
 		 * This constant represent a color of pawn : Blue
 		 */
-		4, 
+		BLUE("B"), 
 		
 		/**
 		 * This constant represent a color of pawn : Red
 		 */
-		5, 
+		RED("R"), 
 		
 		/**
 		 * This constant represent a color of pawn : White
 		 */
-		6,
+		WHITE("W"),
 		
 		/**
 		 * This constant represent a color of pawn : Purple
 		 */
-		7,
+		PURPLE("Pu"),
 		
 		/**
 		 * This constant represent a color of pawn : Pink
 		 */
-		8;
-	}
-	
+		PINK("Pi");
+	 
+	/**
+	* Constructor which serves to declare colors' abreviations.
+	*/
+	private String abreviation ;  
+
+	private ColorOfPawns(String abreviation) {  
+    this.abreviation = abreviation ;  
+	}  
+ 
+
+	public String getAbreviation() {  
+    return  this.abreviation ;  
+	}  
+}
