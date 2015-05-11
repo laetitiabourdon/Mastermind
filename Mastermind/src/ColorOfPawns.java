@@ -1,3 +1,5 @@
+import java.util.Random;
+
 
 // TODO (done) write comment
 /**
@@ -51,7 +53,18 @@ public enum ColorOfPawns {
 	/**
 	* Constructor which serves to declare colors' abreviations.
 	*/
-	private String abreviation ;  
+	private String abreviation ; 
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public ColorOfPawns randomColor() 
+	{
+	    int color = new Random().nextInt(ColorOfPawns.values().hashCode());
+	    return ColorOfPawns.values()[color];
+	}
 
 	private ColorOfPawns(String abreviation) {  
     this.abreviation = abreviation ;  

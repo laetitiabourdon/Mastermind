@@ -22,10 +22,10 @@ public class MastermindGame {
 	
 	// TODO (think about it) all pawns can not be represented using a single int
 	/**
-	 * Represents pawns. 
+	 * Represents pawn. 
 	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
 	 */
-	private int pawns;
+	private int pawn;
 	
 	
 	// TODO (done) fix comment. Tell what is the purpose of the field
@@ -47,7 +47,7 @@ public class MastermindGame {
 
 	
 	public MastermindGame() {
-		this.pawns=
+		this.pawn=
 		this.checkPawn=
 		this.roundNumber=
 	}

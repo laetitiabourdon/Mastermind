@@ -1,3 +1,5 @@
+import java.util.Random;
+
 
 public class Peg {
 
@@ -6,8 +8,10 @@ public class Peg {
 	
 	public Peg()
 	{
-		this.color=
+		this.color = color.randomColor();
 	}
 	
-	public void 
+	
+	
+	
 }

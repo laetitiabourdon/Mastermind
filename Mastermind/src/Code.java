@@ -22,12 +22,15 @@ public class Code
 	 */
 	public Code()
 	{
-		this.pegs= new Peg[3];
+		/**
 		Random rnd = new Random();
 		for(int i=0;i<4;i++)
 		{
 			pegs[i]=rnd.nextInt();
 		}
-		return;
+		
+		return; **/
+		this.code = Peg.randomColor();
 	}
+
 }
