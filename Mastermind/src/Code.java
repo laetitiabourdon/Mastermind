@@ -20,6 +20,8 @@ public class Code
 	 */
 	public Code()
 	{
+		this.pegs = new Peg[NUMBER_OF_PAWNS];
+		
 		for(int i=0;i<4;i++)
 		{
 			this.pegs[i]= new Peg();

@@ -5,6 +5,6 @@ public class Main {
 
 	// TODO write a comment
 	public static void main(String[] args) {
-		new MastermindGame();	
+		new MastermindGame().play();	
 	    }
 }

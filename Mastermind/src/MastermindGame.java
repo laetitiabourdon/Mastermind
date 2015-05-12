@@ -25,7 +25,7 @@ public class MastermindGame {
 	 * Represents pawn. 
 	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
 	 */
-	private int pawn;
+	private int pegs;
 	
 	
 	// TODO (done) fix comment. Tell what is the purpose of the field
@@ -45,31 +45,26 @@ public class MastermindGame {
 	 */
 	private int roundNumber;
 
-	private Code code;
+	private Code codePlayer;
 
 	
 	public MastermindGame() {
-		this.code = new Code();
-		while(true)
-		{
-			if (roundNumber >= NUMBER_OF_ATTEMPTS)
-				/*arrete la partie*/
-			if (this.code.getCode() == this.codeToGuess)
-				/*arrete la partie*/
-			this.checkPawn(this.codeToGuess , this.code.getCode());
-			
-			this.play();	
-		}
+		this.codeToGuess = new Code();
 		
-		/*this.pawn=
-		this.checkPawn=
+		//TODO : initialiser TOUS les attributs
+		
+		/*this.pegs= new Peg();
+		this.checkPawn= new 
 		this.roundNumber=*/
 	}
 	
 	
 	
-	private boolean checkPawn(this.codeToGuess, Code code2)
+	private boolean checkPawn(Code codeToGuess2, Peg[] pegs)
 	{
+		
+		
+		return false;
 		
 		
 	}
@@ -81,7 +76,15 @@ public class MastermindGame {
 	 * The class serves to play mastermind 
 	 */
 	public void play() {
-		
+		while(true)
+		{
+			if (roundNumber >= NUMBER_OF_ATTEMPTS)
+				/*arrete la partie*/
+			if (this.codePlayer.getCode() == this.codeToGuess.getCode())
+				/*arrete la partie*/
+			this.checkPawn(this.codeToGuess , this.codePlayer.getCode());
+
+		}
 	}
 	
 	

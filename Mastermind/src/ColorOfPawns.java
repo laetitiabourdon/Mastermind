@@ -8,6 +8,8 @@ import java.util.Random;
  * 
  */
 public enum ColorOfPawns {
+	
+	
 
 	// TODO (done) constants can not be named using numbers
 		/**
@@ -55,6 +57,10 @@ public enum ColorOfPawns {
 	*/
 	private String abreviation ; 
 	
+	/**
+	 * Number of colors
+	 */
+	public final static int NUMBER_OF_COLORS = 8;
 	
 	/**
 	 * 
@@ -62,7 +68,8 @@ public enum ColorOfPawns {
 	 */
 	public ColorOfPawns randomColor() 
 	{
-	    int color = new Random().nextInt(ColorOfPawns.values().hashCode());
+	    int color = new Random().nextInt(NUMBER_OF_COLORS);
+	    System.out.println(ColorOfPawns.values()[color]);
 	    return ColorOfPawns.values()[color];
 	}
 
