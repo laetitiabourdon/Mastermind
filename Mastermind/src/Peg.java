@@ -6,7 +6,14 @@ public class Peg {
 	
 	public Peg()
 	{
+		
+		this.color = ColorOfPawns.BLUE;
 		this.color = color.randomColor();
+	}
+	
+	public String toString ()
+	{
+		return this.color.toString();
 	}
 	
 }

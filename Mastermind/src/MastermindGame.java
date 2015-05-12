@@ -16,16 +16,9 @@ public class MastermindGame {
 	public final static int NUMBER_OF_ATTEMPTS = 10;
 
 	// TODO write comment
-	private Peg[] codeToGuess;
+	private Code codeToGuess;
 	
 	
-	
-	// TODO (think about it) all pawns can not be represented using a single int
-	/**
-	 * Represents pawn. 
-	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
-	 */
-	private Peg pegs;
 	
 	
 	// TODO (done) fix comment. Tell what is the purpose of the field
@@ -51,14 +44,15 @@ public class MastermindGame {
 	
 	
 	public MastermindGame() {
-		this.codeToGuess = new Peg[Code.NUMBER_OF_PAWNS];
+		System.out.println("*** Code to guess ***");
+		this.codeToGuess = new Code();
 		
 		//TODO : initialiser TOUS les attributs
-		
-		this.pegs= new Peg();
-		this.color = new ColorOfPawns(); 
+
 		this.roundNumber= NUMBER_OF_ATTEMPTS;
-		this.codePlayer = new Peg[Code.NUMBER_OF_PAWNS];
+		
+		System.out.println("*** Code player ***");
+		this.codePlayer = new Code();
 	}
 	
 	
@@ -87,13 +81,55 @@ public class MastermindGame {
 			{
 				if (roundNumber >= NUMBER_OF_ATTEMPTS)
 					/*arrete la partie*/
-				if (this.codePlayer.getCode() == this.codeToGuess.getCode())
+				if (this.codePlayer.getCode() == this.codeToGuess.getCode());
 					/*arrete la partie*/
-				this.checkPawn(this.codeToGuess , this.codePlayer.getCode());
+				this.checkPawn(this.codeToGuess.getCode(), this.codePlayer.getCode());
+				return;
 			}
 		}
 	
 	
+
+
+
+	private void checkPawn(Peg[] codeToGuess, Peg[] codePlayer)
+	{
+		for (int currentPeg = 0; currentPeg < Code.NUMBER_OF_PAWNS; currentPeg++)
+		{
+			System.out.println("\n\n\n" + codeToGuess[currentPeg]);
+			
+			boolean isFound = false;
+			boolean isAtTheGoodPlace = false;
+			
+			for (int currentPeg2 = 0; currentPeg2 < Code.NUMBER_OF_PAWNS; currentPeg2++)
+			{
+				System.out.println(codePlayer[currentPeg2]);
+				
+				if (codeToGuess[currentPeg].toString().equals(codePlayer[currentPeg2].toString()) && currentPeg == currentPeg2)
+				{
+					isFound = true;
+					isAtTheGoodPlace = true;
+				}
+				else if (codeToGuess[currentPeg].toString().equals(codePlayer[currentPeg2].toString()) && currentPeg != currentPeg2)
+				{
+					isFound = true;
+					isAtTheGoodPlace = false;
+				}
+
+				System.out.println("Has been found : " + isFound);
+				System.out.println("Is at the good place : " + isAtTheGoodPlace);
+
+				isFound = false;
+				isAtTheGoodPlace = false;
+				
+			}
+			
+
+		}
+		
+	}
+
+
 	/**
 	 * This class serves to generate pawns.
 	 */

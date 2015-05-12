@@ -12,10 +12,11 @@ public class Code
 	 */
 	private Peg[] pegs;
 	
-	public ComparedCode()
+	public boolean comparedCode(Code codePlayer)
 	{
-		if 
 		
+		
+		return false;
 	}
 	
 	// TODO (done) write comment

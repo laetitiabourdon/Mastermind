@@ -71,6 +71,7 @@ public enum ColorOfPawns {
 	    int color = new Random().nextInt(NUMBER_OF_COLORS);
 	    System.out.println(ColorOfPawns.values()[color]);
 	    return ColorOfPawns.values()[color];
+	    
 	}
 
 	private ColorOfPawns(String abreviation) {  
