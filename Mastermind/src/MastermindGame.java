@@ -45,15 +45,37 @@ public class MastermindGame {
 	 */
 	private int roundNumber;
 
+	private Code code;
+
 	
 	public MastermindGame() {
-		this.pawn=
+		this.code = new Code();
+		while(true)
+		{
+			if (roundNumber >= NUMBER_OF_ATTEMPTS)
+				/*arrete la partie*/
+			if (this.code.getCode() == this.codeToGuess)
+				/*arrete la partie*/
+			this.checkPawn(this.codeToGuess , this.code.getCode());
+			
+			this.play();	
+		}
+		
+		/*this.pawn=
 		this.checkPawn=
-		this.roundNumber=
+		this.roundNumber=*/
 	}
 	
 	
 	
+	private boolean checkPawn(this.codeToGuess, Code code2)
+	{
+		
+		
+	}
+
+
+
 	// TODO (done) write comment
 	/**
 	 * The class serves to play mastermind 

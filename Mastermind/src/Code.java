@@ -1,5 +1,3 @@
-import java.util.Random;
-
 // TODO write comment
 public class Code 
 {	
@@ -22,15 +20,16 @@ public class Code
 	 */
 	public Code()
 	{
-		/**
-		Random rnd = new Random();
 		for(int i=0;i<4;i++)
 		{
-			pegs[i]=rnd.nextInt();
+			this.pegs[i]= new Peg();
 		}
 		
-		return; **/
-		this.code = Peg.randomColor();
+	}
+	
+	public Peg[] getCode()
+	{
+		return pegs;
 	}
 
 }
