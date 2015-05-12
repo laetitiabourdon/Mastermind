@@ -81,4 +81,6 @@ public enum ColorOfPawns {
 	public String getAbreviation() {  
     return  this.abreviation ;  
 	}  
+	
+	
 }

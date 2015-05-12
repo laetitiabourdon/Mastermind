@@ -12,6 +12,11 @@ public class Code
 	 */
 	private Peg[] pegs;
 	
+	public ComparedCode()
+	{
+		if 
+		
+	}
 	
 	// TODO (done) write comment
 	/**
@@ -22,7 +27,7 @@ public class Code
 	{
 		this.pegs = new Peg[NUMBER_OF_PAWNS];
 		
-		for(int i=0;i<4;i++)
+		for(int i=0;i<NUMBER_OF_PAWNS;i++)
 		{
 			this.pegs[i]= new Peg();
 		}

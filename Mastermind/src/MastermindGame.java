@@ -16,7 +16,7 @@ public class MastermindGame {
 	public final static int NUMBER_OF_ATTEMPTS = 10;
 
 	// TODO write comment
-	private Code codeToGuess;
+	private Peg[] codeToGuess;
 	
 	
 	
@@ -25,7 +25,7 @@ public class MastermindGame {
 	 * Represents pawn. 
 	 * There are 8 colors of pawn: red ; yellow ; green ; blue ; orange ; white ; purple ; pink (relevant values). The computer generate a combination of 4 colors. 
 	 */
-	private int pegs;
+	private Peg pegs;
 	
 	
 	// TODO (done) fix comment. Tell what is the purpose of the field
@@ -47,51 +47,65 @@ public class MastermindGame {
 
 	private Code codePlayer;
 
+	private ColorOfPawns color;
+	
 	
 	public MastermindGame() {
-		this.codeToGuess = new Code();
+		this.codeToGuess = new Peg[Code.NUMBER_OF_PAWNS];
 		
 		//TODO : initialiser TOUS les attributs
 		
-		/*this.pegs= new Peg();
-		this.checkPawn= new 
-		this.roundNumber=*/
+		this.pegs= new Peg();
+		this.color = new ColorOfPawns(); 
+		this.roundNumber= NUMBER_OF_ATTEMPTS;
+		this.codePlayer = new Peg[Code.NUMBER_OF_PAWNS];
 	}
 	
 	
-	
-	private boolean checkPawn(Code codeToGuess2, Peg[] pegs)
+	/**
+	 * 
+	 * @param codeToGuess
+	 * @param codePlayer
+	 * @return
+	 */
+	/*private boolean checkPawn(Code codeToGuess, Code codePlayer)
 	{
-		
-		
+		for(int i=0;i<(4);i++)
+		{
+			
+		}
 		return false;
-		
-		
-	}
-
-
+	}*/
 
 	// TODO (done) write comment
 	/**
 	 * The class serves to play mastermind 
 	 */
-	public void play() {
-		while(true)
+	public void play() 
 		{
-			if (roundNumber >= NUMBER_OF_ATTEMPTS)
-				/*arrete la partie*/
-			if (this.codePlayer.getCode() == this.codeToGuess.getCode())
-				/*arrete la partie*/
-			this.checkPawn(this.codeToGuess , this.codePlayer.getCode());
-
+			while(true)
+			{
+				if (roundNumber >= NUMBER_OF_ATTEMPTS)
+					/*arrete la partie*/
+				if (this.codePlayer.getCode() == this.codeToGuess.getCode())
+					/*arrete la partie*/
+				this.checkPawn(this.codeToGuess , this.codePlayer.getCode());
+			}
 		}
-	}
 	
 	
 	/**
 	 * This class serves to generate pawns.
 	 */
-	public void pawn() {
+	public void pawn() 
+	{
+		
+	}
+	
+	
+	
+	public void codePlayer()
+	{
 		
 	}
 	
