@@ -43,7 +43,8 @@ public class MastermindGame {
 	private ColorOfPawns color;
 	
 	
-	public MastermindGame() {
+	public MastermindGame() 
+	{
 		System.out.println("*** Code to guess ***");
 		this.codeToGuess = new Code();
 		
@@ -71,6 +72,8 @@ public class MastermindGame {
 		return false;
 	}*/
 
+	
+	
 	// TODO (done) write comment
 	/**
 	 * The class serves to play mastermind 
@@ -123,7 +126,7 @@ public class MastermindGame {
 				isAtTheGoodPlace = false;
 				
 			}
-			
+	
 
 		}
 		
